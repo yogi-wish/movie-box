@@ -9,7 +9,7 @@ npm install
 mkdir uploads
 npm run start:dev
 - Runs at http://localhost:4000
-- Swagger at http://localhost:4000/api
+- Swagger at http://localhost:4000/api  
 - Seeded user: admin@example.com , password:password
 
 ## Frontend
@@ -18,4 +18,15 @@ npm install
 npm run dev
 - Runs at http://localhost:3000/login
 - .env.local included to point to backend
+
+
+## production environment
+
+Go to the link https://movie-box-beryl-iota.vercel.app/login
+Put the credential of seeded user
+Seeded user:{
+    email: admin@example.com
+    password: password
+}
+
 

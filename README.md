@@ -10,7 +10,7 @@ mkdir uploads
 npm run start:dev
 - Runs at http://localhost:4000
 - Swagger at http://localhost:4000/api
-- Seeded user: admin@example.com / password
+- Seeded user: admin@example.com , password:password
 
 ## Frontend
 cd frontend

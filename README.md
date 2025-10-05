@@ -1,0 +1,21 @@
+
+# Movie Assignment Full Project
+
+This archive contains a frontend (Next.js) and backend (NestJS) implementation of the movie assignment.
+
+## Backend
+cd backend
+npm install
+mkdir uploads
+npm run start:dev
+- Runs at http://localhost:4000
+- Swagger at http://localhost:4000/api
+- Seeded user: admin@example.com / password
+
+## Frontend
+cd frontend
+npm install
+npm run dev
+- Runs at http://localhost:3000/login
+- .env.local included to point to backend
+

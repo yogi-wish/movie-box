@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* frontend/styles/globals.css */
+
+
+/* Custom gradients and tweaks */
+:root {
+  --glass: rgba(255,255,255,0.6);
+}
+
+body {
+  @apply bg-gradient-to-b from-sky-50 via-white to-indigo-50 min-h-screen;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Card */
+.card {
+  @apply bg-white/80 backdrop-blur-md border border-white/40 rounded-2xl shadow-md p-5;
+}
+
+/* Nav */
+.navbar {
+  @apply bg-gradient-to-r from-indigo-600 to-sky-500 text-white py-4 shadow-lg;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold shadow-sm;
+}
+.btn-primary {
+  @apply bg-gradient-to-r from-indigo-500 to-sky-400 text-white hover:from-indigo-600 hover:to-sky-500;
+}
+.btn-ghost {
+  @apply bg-white/30 text-white hover:bg-white/40;
+}
+
+/* Movie card image */
+.poster {
+  @apply w-full h-64 object-cover rounded-xl mb-4;
+}
+
+/* Form inputs */
+.input {
+  @apply w-full px-4 py-2 border border-gray-200 rounded-lg bg-white/90;
+}
+
+/* small helpers */
+.center-page {
+  @apply flex items-center justify-center py-16;
+}
+
+
+/* Base */
+
+/* 
+:root {
+  --primary: #4769b3;
+  --primary-hover: #2b427f;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+button {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.center-box {
+  max-width: 400px;
+  margin: 100px auto;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.center-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  width: auto;
+  padding: 8px 16px;
+}
+
+header button {
+  width: auto;
+  margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+} */

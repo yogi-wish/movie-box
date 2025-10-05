@@ -9,7 +9,7 @@ This archive contains a frontend (Next.js) and backend (NestJS) implementation o
 - mkdir uploads (if doesn't exist)
 - npm run start:dev
 - Runs at http://localhost:4000
-- Swagger at http://localhost:4000/api  
+- Swagger at https://movie-box-production-bf93.up.railway.app/api  
 - Seeded user: admin@example.com , password:password
 
 ## Frontend
@@ -24,8 +24,8 @@ This archive contains a frontend (Next.js) and backend (NestJS) implementation o
 
 - Go to the link https://movie-box-beryl-iota.vercel.app/login
 - Put the credential of seeded user
-- Seeded user:{
-    email: admin@example.com
+- Seeded user: {
+    email: admin@example.com,
     password: password
 }
 

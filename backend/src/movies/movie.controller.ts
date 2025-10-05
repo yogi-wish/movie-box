@@ -40,7 +40,7 @@ export class MoviesController {
       limits: { fileSize: 5 * 1024 * 1024 },
     }),
   )
-  async create(@UploadedFile() file: Express.Multer.File, @Body() body: CreateMovieDto, @Req() req: Request) {
+  async create(@UploadedFile() file: any, @Body() body: CreateMovieDto, @Req() req: Request) {
     const posterPath = file ? `/uploads/${file.filename}` : null;
     return this.svc.create({ title: body.title, publishingYear: body.publishingYear, posterPath });
   }
@@ -71,7 +71,7 @@ export class MoviesController {
       }),
     }),
   )
-  async update(@Param('id') id: string, @UploadedFile() file: Express.Multer.File, @Body() body: Partial<CreateMovieDto>) {
+  async update(@Param('id') id: string, @UploadedFile() file: any, @Body() body: Partial<CreateMovieDto>) {
     const posterPath = file ? `/uploads/${file.filename}` : undefined;
     return this.svc.update(Number(id), {
       ...(body.title ? { title: body.title } : {}),

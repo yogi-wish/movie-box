@@ -11,7 +11,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
 
   app.enableCors({
-    origin: ['http://localhost:3000'], // Frontend URL(s)
+    origin: ['https://movie-box-beryl-iota.vercel.app'], // Frontend URL(s)
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // if you send cookies/auth headers
   });
